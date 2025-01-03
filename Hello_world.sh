@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # author: Ganesh Reddy
 # Date: 02-01-2025
 
