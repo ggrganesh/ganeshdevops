@@ -7,9 +7,9 @@ NUMBER2=$2
 
 TIMESTAMP=$(date)
 
-echo "Entered time":: $TIMESTAMP
+echo "Entered time:: $TIMESTAMP"
 
 SUM=(($NUMBER1+$NUMNER2))
 
-echo " sum of $NUMBER1 and $NUMBER2 total":: $SUM
+echo "sum of $NUMBER1 and $NUMBER2 total:: $SUM"
 
