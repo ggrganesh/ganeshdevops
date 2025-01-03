@@ -3,7 +3,7 @@
 # Date: 02-01-2025
 
 NUMBER1=$1
-NUMBER1=$2 
+NUMBER2=$2 
 
 TIMESTAMP=$(date)
 
@@ -11,5 +11,5 @@ echo "Entered time":: $TIMESTAMP
 
 SUM=(($NUMBER1+$NUMNER2))
 
-echo " sum of $NUMBER1 and $NUMBER2 is":: $SUM
+echo " sum of $NUMBER1 and $NUMBER2 total":: $SUM
 
