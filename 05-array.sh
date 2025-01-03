@@ -2,7 +2,7 @@
 # author: Ganesh Reddy
 # Date: 02-01-2025
 
-MOVIES=(Salaar, Kalki, Lucky Bhasakar)
+MOVIES=("Salaar" "Kalki" "Lucky Bhasakar")
 
 # Index starts from 0 to 3 
 
