@@ -11,3 +11,6 @@ echo "home directory: $HOME"
 echo "Process id of present script: $$"
 sleep 60 & 
 echo "Process id last command background: $!"
+echo "Random number: $RANDOM"
+sleep 5 
+echo "Elapsed time: $SECONDS seconds
