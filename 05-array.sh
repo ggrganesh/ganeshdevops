@@ -12,5 +12,5 @@ echo "Third movive name is: ${MOVIES=[$3]}"
 
 # Print all movies 
 
-echo "All movies are:: {$MOVIES=[@]}"
+echo "All movies are:: ${MOVIES=[@]}"
 
