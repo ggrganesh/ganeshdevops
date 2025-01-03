@@ -1,4 +1,6 @@
 #!/bin/bash
+# author: Ganesh Reddy
+# Date: 02-01-2025
 
 echo "Please enter your name::"  # Text enter any name 
 
@@ -8,4 +10,4 @@ echo "username entered :: $USERNAME"
 
 echo "please enter your password ::"  # Here is the password 
 
-read -s PASSWORD          # Hide password 
+read -s PASSWORD   # Hide password 
