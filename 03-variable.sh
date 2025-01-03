@@ -6,6 +6,6 @@ read -s USERNAME # Here user name is the variable
 
 echo "username entered :: $USERNAME"
 
-echo "password entered::"
+echo "please enter your password ::"  # Here is the password 
 
-read -s PASSWORD
+read -s PASSWORD          # Hide password 
