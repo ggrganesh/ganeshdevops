@@ -12,7 +12,7 @@ install_package (){
   local package=$1
   echo "checking $package is insalled ..."  
   dnf list installed $package &>/dev/null
-  if [ $? -ne 0]
+  if [ $? -ne 0 ]
   then
   echo "$package is not found installing...."
   dnf install $package -y &>/dev/null
