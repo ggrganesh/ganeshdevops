@@ -2,7 +2,7 @@
 # Author :: Ganesh Reddy
 # Date   :: 03-01-2025 
 
-NUMBER=!1
+NUMBER=$1
 
 # -gt, -lt, -eq, -ge, -le
 
