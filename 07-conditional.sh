@@ -10,10 +10,10 @@ if [ $NUMBER -gt 100 ]
 
 then
 
-echo "Given number is is gretar than 100"
+   echo "Given number is is gretar than 100"
 
 else
 
-echo "given muber is less than 100"
+   echo "given muber is less than 100"
 
 fi
