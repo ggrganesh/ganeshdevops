@@ -31,12 +31,12 @@ fi
 
 for package in $@
 do 
-   dnf installed $package &>>$LOGFILE_NAME
-if [ $? -ne 0 ]
-then
+     dnf installed $package &>>$LOGFILE_NAME
+  if [ $? -ne 0 ]
+  then
      dnf install $package -y &>>$LOGFILE_NAME
      VALIDATE $? "installing $package"
- else
+  else
     echo "$package already $Y Installed $N"
-fi
+  fi
 done 
