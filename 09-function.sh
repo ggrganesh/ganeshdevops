@@ -2,34 +2,33 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ];then
- 
- echo "Error: User does'nt have sudo permission to run this script"
- exit 1  #Not other than 0 
-fi   
+VALIDATE(){
+      if [ $? -ne 0 ]
+    then
+        echo "Installing MySQL ... FAILURE"
+        exit 1
+    else
+        echo "Installing MySQL ... SUCCESS"
+    fi
 
-install_package (){
-  local package=$1
-  echo "checking $package is insalled ..."  
-  dnf list installed $package &>/dev/null
-  if [ $? -ne 0 ]
-  then
-  echo "$package is not found installing...."
-  dnf install $package -y &>/dev/null
-  if [ $? -ne 0 ]
-  then
-  echo "Install $package failure "
-  exit 1 
-  else 
-  echo "Install $package Success"
-  fi  
-  else
-  echo "$package is already installed"
-  fi
 }
 
-# Check and install MySQL
-install_package nginx
+dnf list installed mysql
 
-# Check and install Git
-install_package telnet 
+if [ $? -ne 0 ]
+then # not installed
+    dnf install mysql -y
+    VALIDATE $? "Installing MySQL"
+else
+    echo "MySQL is already ... INSTALLED"
+fi
+
+dnf list installed git
+
+if [ $? -ne 0 ]
+then # not installed
+    dnf install git -y
+  
+else
+    echo "GIT is already ... INSTALLED"
+fi
