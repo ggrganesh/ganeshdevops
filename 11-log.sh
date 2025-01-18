@@ -5,9 +5,9 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-LOG_FOLDER=$"/var/log/shell_script_logs"
+LOG_FOLDER="/var/log/shell_script_logs"
 LOG_FILE=$( echo $0 | cut -d "." -f1 )
-TIMESTAMP=$( date +%Y-%M-%D-%H-%M-%S )
+TIMESTAMP=$( date +%Y-%m-%d-%H-%M-%S )
 LOGFILE_NAME="$LOG_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 VALIDATE(){
@@ -21,7 +21,7 @@ VALIDATE(){
 
 }
 
-echo "Script started executing at $TIMESTAMP" &>>$LOGFILE_NAME
+echo "Script started executing at: $TIMESTAMP" &>>$LOGFILE_NAME
 
 dnf list installed mysql &>>$LOGFILE_NAME
 
