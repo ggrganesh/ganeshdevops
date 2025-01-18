@@ -33,5 +33,5 @@ then # not installed
     dnf install git -y
   
 else
-    echo "GIT is already ... INSTALLED"
+    echo -e "GIT is already ... $Y INSTALLED"
 fi
